@@ -1,13 +1,35 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = 'https://toolmate-seven.vercel.app'
+  
   return [
     {
-      url: 'https://toolmate-seven.vercel.app',
+      url: baseUrl,
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 1,
     },
-    // Add other pages here as you create them
+    {
+      url: `${baseUrl}/age-calculator`,
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/bmi-calculator`,
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+    },
+    {
+      url: `${baseUrl}/emi-calculator`,
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+    },
+    {
+      url: `${baseUrl}/about`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+    },
   ]
 }
