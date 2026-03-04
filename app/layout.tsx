@@ -12,6 +12,14 @@ export const metadata: Metadata = {
   title: "ToolMate - Pixel Tools",
   description:
     "Retro styled online calculators and tools including Age Calculator, BMI and EMI tools.",
+  metadataBase: new URL('https://toolmate-seven.vercel.app'),
+  alternates: {
+    canonical: '/',
+  },
+  verification: {
+    // I extracted the ID from the filename you provided: google7cdedb0e53ced8b7
+    google: "7cdedb0e53ced8b7", 
+  },
 };
 
 export default function RootLayout({
