@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   verification: {
     // I extracted the ID from the filename you provided: google7cdedb0e53ced8b7
-    google: "7cdedb0e53ced8b7", 
+    google: "acCtShg78x9c_MfzzlsgBhXSt2CbQLcgAH4cXrc1c3w", 
   },
 };
 
